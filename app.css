@@ -58,3 +58,17 @@ h2 {
 .navbar.scrolled {
   background: rgba(0, 0, 0, 0.246);
 }
+@media (max-width: 767px) {
+  body {
+    margin-top: 50px;
+  }
+  .navbar-default {
+    position: fixed;
+    z-index: 1030; /*/this value is from variables.less -> @zindex-navbar-fixed*/
+    right: 0;
+    left: 0;
+    border-radius: 0;
+    top: 0;
+    border-width: 0 0 1px;
+  }
+}
